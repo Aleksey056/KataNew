@@ -16,6 +16,9 @@
 			background-color: $colorWhite;
 			transform: translateX(0);
 		}
+	.windowBlur--active {
+		z-index: 50;
+	}
 	div {
 		background-color: $colorWhite;
 	}
@@ -154,6 +157,5 @@
 	
 		@media (min-width: $widescreen) {
 			box-shadow: none;
-			z-index: 50;
 		}
 }
