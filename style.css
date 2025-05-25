@@ -666,7 +666,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
   transform: translateX(0);
   background-color: #FFFFFF;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
-  z-index: 300; }
+  z-index: 50; }
   @media (min-width: 1366px) {
     .mobil-menu--active {
       box-shadow: none; } }
