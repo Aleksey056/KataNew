@@ -567,6 +567,8 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
       box-shadow: none;
       background-color: #FFFFFF;
       transform: translateX(0); } }
+  .mobil-menu .windowBlur--active {
+    z-index: 50; }
   .mobil-menu div {
     background-color: #FFFFFF; }
   .mobil-menu .header-block {
@@ -668,8 +670,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2); }
   @media (min-width: 1366px) {
     .mobil-menu--active {
-      box-shadow: none;
-      z-index: 50; } }
+      box-shadow: none; } }
 
 .feedback {
   position: fixed;
