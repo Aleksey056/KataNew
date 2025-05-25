@@ -151,8 +151,9 @@
 	transform: translateX(0);
 	background-color: $colorWhite;
 	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
-	z-index: 50;
+	
 		@media (min-width: $widescreen) {
 			box-shadow: none;
+			z-index: 50;
 		}
 }
