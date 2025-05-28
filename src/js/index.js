@@ -122,7 +122,7 @@ function createCardBrands(image) {
 		imgItem.alt = image[i].alt;
 		slideItem.appendChild(imgItem);
 
-		const btn = document.createElement('button');
+		const btn = document.createElement('span');
 		btn.classList.add('icon-button');
 		slideItem.appendChild(btn);
 
@@ -160,7 +160,7 @@ function createCardTechnic (name) {
 		slideName.textContent = services[i].name;
 		slideItem.appendChild(slideName);
 
-		const btn = document.createElement('button');
+		const btn = document.createElement('span');
 		btn.classList.add('icon-button');
 		slideItem.appendChild(btn);
 	}
@@ -214,7 +214,7 @@ function createCardPrice (price) {
 
 
 
-		const slideItem = document.createElement('a');
+		const slideItem = document.createElement('div');
 		slideItem.classList.add('swiper-price__item');
 		slide.appendChild(slideItem);
 
