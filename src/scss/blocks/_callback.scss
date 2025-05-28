@@ -9,6 +9,7 @@
   transform: translateX(513px);
 	transition: transform 0.8s;
   height: 100%;
+	border-left: 1px solid $colorLayout;
     @media (min-width: $widescreen) {
       width: 440px;
     }
@@ -26,7 +27,7 @@
     }
   }
 
-  .callback-title {
+.callback-title {
     margin-top: 32px;
 		display: flex;
 		align-items: center;
@@ -34,17 +35,14 @@
 		display: flex;
 		align-items: center;
 		gap: 12px;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: -0.6px;
 		&__img {
 			height: 40px;
 			width: 4px;
 			background-image: url(../img/title/highlight.svg);
-		}
-		&__text {
-			margin: 0;
-			font-weight: 700;
-			font-size: 24px;
-			line-height: 32px;
-			letter-spacing: -0.6px;
 		}
 	}
   

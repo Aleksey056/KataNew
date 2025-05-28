@@ -26,8 +26,6 @@ form__button-send и icon-price - один и тот же Блок
 
 icon-button - можно сделать через Блок round-icon
 
-swiper-conteiner__title-section - это можно сделать h2, зелёную полоску задать через border-top и убрать избыточные теги. feedback-title - так же можно сделать h3, а зелёную плашку через псевдоэлемент
-
 Чем отличаются Элементы form__name, form__number, form__email? .feedback .form input, .feedback .form textarea - если у них общие стили, то видимо можно сделать какой-то общий Элемент (например form__field)
 
 
