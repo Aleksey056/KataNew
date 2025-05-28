@@ -45,37 +45,6 @@
 			background-image: url(../img/title/highlight.svg);
 		}
 	}
-  
-  .form {
-    padding-top: 24px;
-    padding-left: 16px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-      @media (min-width: $widescreen) {
-        padding-left: 32px;
-        }
-    &__number{
-      width: 288px;
-      height: 48px;
-      border-radius: 8px;
-      border: 1px solid $colorFormBorder;
-        @media (min-width: $widescreen) {
-          width: 376px;
-        }
-    }
-		&__button-send {
-			margin-left: auto;
-      margin-right: 16px;
-      width: 136px;
-      height: 32px;
-      border-radius: 16px;
-      background-image: url(../img/feedback/Group.svg);
-			&:hover {
-				opacity: 50%;
-			}
-    }	
-  }
 
     input {
       box-sizing: border-box;
