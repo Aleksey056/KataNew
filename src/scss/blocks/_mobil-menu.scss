@@ -84,23 +84,22 @@
 			flex-direction: column;
 			gap: 20px;
 			.menu-block {
-				background-image: none;
 				display: flex;
 				align-items: center;
-				height: 32px;
+				// height: 32px;
+					&:hover {
+						background-image: url(../img/title/highlight.svg);
+						background-repeat: no-repeat;
+					}
 					&__text {
 						color: #1B1C21;
 						margin: 0;
 						margin-left: 24px;	
 						text-decoration: none;
-						transition: all 0.5s ease-out;
-					}
-					&--hover:hover {
-						background-image: url(../img/title/highlight.svg);
-						background-repeat: no-repeat;
-					}
-					&__text--hover:hover {
-						color: #7E7E82;
+						transition: all 0.4s ease-out;
+						&:hover {
+							color: #7E7E82;
+						}
 					}
 			}
 			}
