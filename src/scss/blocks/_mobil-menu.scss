@@ -76,78 +76,75 @@
 
 	.nav {
 		padding-bottom: 32px;
-		@media (min-width: $widescreen) {
-			background-color: $colorWhite;
-		}
-	}
-
-	.menu {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-	}
-
-	.menu-block {
-		background-image: none;
-		display: flex;
-		align-items: center;
-		height: 32px;
-		&__text {
-		color: #1B1C21;
-		margin: 0;
-		margin-left: 24px;	
-		text-decoration: none;
-		transition: all 0.5s ease-out;
-		}
-		&--hover:hover {
-		background-image: url(../img/title/highlight.svg);
-		background-repeat: no-repeat;
-		}
-		&__text--hover:hover {
-		color: #7E7E82;
-		}
+			@media (min-width: $widescreen) {
+				background-color: $colorWhite;
+			}
+		.menu {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			.menu-block {
+				background-image: none;
+				display: flex;
+				align-items: center;
+				height: 32px;
+					&__text {
+						color: #1B1C21;
+						margin: 0;
+						margin-left: 24px;	
+						text-decoration: none;
+						transition: all 0.5s ease-out;
+					}
+					&--hover:hover {
+						background-image: url(../img/title/highlight.svg);
+						background-repeat: no-repeat;
+					}
+					&__text--hover:hover {
+						color: #7E7E82;
+					}
+			}
+			}
 	}
 
 	.aside-footer {
 		padding-left: 24px;
 		padding-bottom: 40px;
+		.contact-info {
+			display: flex;
+			flex-direction: column;
+			gap: 14px;
+			margin-bottom: 40px;
+				&__round-icon {
+					display: flex;
+					gap: 16px;
+				}
+				&__number {
+					font-weight: 700;
+					font-size: 24px;
+					line-height: 32px;
+					letter-spacing: -0.6px;
+				}
+		}
+		.lang {
+				width: 24px;
+				height: 24px;
+				display: flex;
+				align-items: self-start;
+				gap: 7px;
+				button {
+					background-color: $colorWhite;
+						&:hover {
+							display: flex;
+							gap: 7px;
+							color: #7E7E82;
+						}
+				}
+		}
 	}
 
-	.contact-info {
-		display: flex;
-		flex-direction: column;
-		gap: 14px;
-		margin-bottom: 40px;
-		
-		&__round-icon {
-			display: flex;
-			gap: 16px;
-		}
-		&__number {
-			font-weight: 700;
-			font-size: 24px;
-			line-height: 32px;
-			letter-spacing: -0.6px;
-		}
-		&__lang {
-			width: 24px;
-			height: 24px;
-			display: flex;
-			align-items: self-start;
-			gap: 7px;
-
-		button {
-			background-color: $colorWhite;
-		}
-		}
-
-		&__lang:hover {
-			display: flex;
-			gap: 7px;
-			color: #7E7E82;
-		}
-	}
 }
+
+
 
 .mobil-menu--active {
 	transform: translateX(0);
