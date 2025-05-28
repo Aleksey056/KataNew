@@ -95,9 +95,13 @@ main {
 			@media (min-width: $tablet) {
 				margin-left: 24px;
 			}
+		.swiper__shadow {
+			height: 40px;
+		}
 	}
 	
 	.menu {
+		height: 40px;
 		padding: 0;
 		white-space: nowrap;
 		display: flex;
