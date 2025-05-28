@@ -257,7 +257,7 @@ function createCardPrice (price) {
 			spanTitlePeriod.textContent = titlePeriod;
 			spanTitlePeriod.classList.add('span-title')
 			divPeriod.appendChild(spanTitlePeriod);
-
+			
 			const spanPeriod = document.createElement('span');
 			spanPeriod.textContent = price[i].period;
 			spanPeriod.classList.add('span-text')
@@ -279,18 +279,7 @@ createCardPrice (price);
 
 
 
-
-
-
-
-
-
-
-
-
-
-// expand block
-
+// expand button
 const expandBrands = document.getElementById('brandsList');
 const expandButtonText = document.getElementById('expandButtonText');
 
@@ -302,7 +291,6 @@ expandButtonText.addEventListener('click', function () {
 	} else {
 		expandButtonText.textContent = 'Показать всё';
 	}
-	
 });
 
 const expandTechnic = document.getElementById('technicList');
@@ -328,25 +316,11 @@ expandButtonTechnic.addEventListener('click', function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // BUTTON FUNCTIONAL
 
 const buttonBurger = document.getElementById('buttonBurger');
 const buttonBurgerHidden = document.getElementById('buttonBurgerHidden');
-
 const buttonFeedback = document.getElementById('buttonFeedback');
-// const buttonFeedback = document.getElementsByClassName('.round-icon--call');
-// const buttonFeedback = document.querySelectorAll('#buttonFeedback', '#buttonFeedback2');
 
 const buttonFeedbackHidden = document.getElementById('buttonFeedbackHidden');
 
@@ -361,15 +335,11 @@ const windowBlur = document.getElementById('windowBlur');
 
 
 
-
-
 // drop-burger
-
 buttonBurger.addEventListener('click', function () {
 	mobilMenu.classList.add('mobil-menu--active');
 	windowBlur.classList.add('windowBlur--active');
 });
-
 buttonBurgerHidden.addEventListener('click', function() {
 	mobilMenu.classList.remove('mobil-menu--active');
 	windowBlur.classList.remove('windowBlur--active');
@@ -378,17 +348,15 @@ buttonBurgerHidden.addEventListener('click', function() {
 
 
 // drop-feedback
-
 buttonFeedback.addEventListener('click', function() {
-	feedback.classList.add('feedback--active');
+	feedback.classList.add('modal--active');
 	mobilMenu.classList.remove('mobil-menu--active');
-	callback.classList.remove('callback--active');
+	callback.classList.remove('modal--active');
 	mobilMenu.classList.add('windowBlur--active')
 	windowBlur.classList.add('windowBlur--active');
 });
-
 buttonFeedbackHidden.addEventListener('click', function() {
-	feedback.classList.remove('feedback--active');
+	feedback.classList.remove('modal--active');
 	windowBlur.classList.remove('windowBlur--active');
 	mobilMenu.classList.remove('windowBlur--active')
 });
@@ -396,53 +364,34 @@ buttonFeedbackHidden.addEventListener('click', function() {
 
 
 //drop-callback
-
 buttonCallback.addEventListener('click', function() {
-	callback.classList.add('callback--active');
+	callback.classList.add('modal--active');
 	mobilMenu.classList.remove('mobil-menu--active');
-	feedback.classList.remove('feedback--active');
+	feedback.classList.remove('modal--active');
 	mobilMenu.classList.add('windowBlur--active')
 	windowBlur.classList.add('windowBlur--active');
 });
-
 buttonCallbackHidden.addEventListener('click', function() {
-	callback.classList.remove('callback--active');
+	callback.classList.remove('modal--active');
 	windowBlur.classList.remove('windowBlur--active');
 	mobilMenu.classList.remove('windowBlur--active')
 });
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// закрытие по ESK
 function keyESC () {
 	document.addEventListener('keydown', function(e){
-    if (e.keyCode === 27 && feedback.classList.contains('feedback--active') ||
+    if (
+				e.keyCode === 27 && feedback.classList.contains('modal--active') ||
 				e.keyCode === 27 && windowBlur.classList.contains('mobil-menu--active') ||
-				e.keyCode === 27 && callback.classList.contains('callback--active') ||
+				e.keyCode === 27 && callback.classList.contains('modal--active') ||
 				e.keyCode === 27 && windowBlur.classList.contains('windowBlur--active')) {
 
 					
-					feedback.classList.remove('feedback--active');
-					callback.classList.remove('callback--active');
+					// feedback.classList.remove('feedback--active');
+					feedback.classList.remove('modal--active');
+					callback.classList.remove('modal--active');
 					mobilMenu.classList.remove('mobil-menu--active');
 					windowBlur.classList.remove('windowBlur--active');
     }
@@ -452,25 +401,13 @@ keyESC();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+// Закрытие по заблюренной области
 document.addEventListener('click', function(evt){
   if(evt.target.classList.contains('windowBlur')){
-    feedback.classList.remove('feedback--active');
-    callback.classList.remove('callback--active');
+    feedback.classList.remove('modal--active');
+    callback.classList.remove('modal--active');
 		mobilMenu.classList.remove('mobil-menu--active');
 		mobilMenu.classList.remove('windowBlur--active');
 		windowBlur.classList.remove('windowBlur--active');
   }
 })
-
