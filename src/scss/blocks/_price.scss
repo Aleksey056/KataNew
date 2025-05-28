@@ -73,7 +73,9 @@
 							}
 				}
 				&:nth-child(1) .span-text {
-					width: 348px;
+					@media (min-width: $tablet) {
+						width: 348px;
+					}
 				}
 				&:nth-child(2) .span-text {
 					width: 74px;
@@ -85,7 +87,7 @@
 		.long-button {
 			position: absolute;
 			bottom: 16px;
-			right: 0;
+			right: 16px;
 					@media (min-width: $tablet) {
 						position: static;
 					}
@@ -94,8 +96,8 @@
 
 		.swiper-slide {
 			display: flex;
-			width: 240px;
-			margin-right: 16px;
+			width: 260px;
+			// margin-right: 16px;
 				@media (min-width: $tablet) {
 					width: 100%;
 					justify-content: center;
