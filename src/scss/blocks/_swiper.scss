@@ -16,31 +16,42 @@
 				z-index: 2;
 			}
 	}
-	&__title-section {
-	margin: 0;
+		&__title-section {
 	font-weight: 400;
 	text-transform: uppercase;
-	padding-bottom: 24px;
-	text-transform: uppercase;
-	color: $colorTextBlock;
 	border-top: 1px solid $colorLayout;
-		.green-line {
-			height: 1px;	
-			border-radius: 1px;
-			background: $colorGreenLine;
+	background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%); 
+	padding: 16px;
+	margin-bottom: 16px;
+	color: $colorTextBlock;
+		@media (min-width: $tablet) {
+			padding: 16px 24px;
+			margin-bottom: 24px;
 		}
-		h2 {
-			background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%); 
-			padding: 16px;
-			color: $colorTextBlock;
-				@media (min-width: $tablet) {
-					padding: 16px 24px;
-				}
-				@media (min-width: $widescreen) {
-					padding: 16px 32px;
-				}
+		@media (min-width: $widescreen) {
+			padding: 16px 32px;
 		}
 	}
+	// &__title-section {
+	// margin: 0;
+	// font-weight: 400;
+	// text-transform: uppercase;
+	// padding-bottom: 24px;
+	// text-transform: uppercase;
+	// color: $colorTextBlock;
+	// border-top: 1px solid $colorLayout;
+	// 	h2 {
+	// 		background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%); 
+	// 		padding: 16px;
+	// 		color: $colorTextBlock;
+	// 			@media (min-width: $tablet) {
+	// 				padding: 16px 24px;
+	// 			}
+	// 			@media (min-width: $widescreen) {
+	// 				padding: 16px 32px;
+	// 			}
+	// 	}
+	// }
 }
 
 .swiper {
