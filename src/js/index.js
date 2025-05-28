@@ -263,10 +263,8 @@ function createCardPrice (price) {
 			spanPeriod.classList.add('span-text')
 			divPeriod.appendChild(spanPeriod);
 
-
-
 		const btn = document.createElement('button');
-		btn.classList.add('icon-price');
+		btn.classList.add('long-button', 'long-button--order');
 		slideItem.appendChild(btn);
 	}
 }

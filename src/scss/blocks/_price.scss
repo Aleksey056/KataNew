@@ -82,24 +82,16 @@
 					width: 81px;
 				}
 			}
-			
-		.icon-price {
+		.long-button {
 			position: absolute;
 			bottom: 16px;
 			right: 0;
-			background-color: $colorWhite;
-			width: 119px;
-			height: 32px;
-			background-image: url(../img/price/price-button.svg);
 					@media (min-width: $tablet) {
 						position: static;
-						// margin: 16px;
 					}
-		&:hover {
-			opacity: 50%;
 		}
 		}
-		}
+
 		.swiper-slide {
 			display: flex;
 			width: 240px;

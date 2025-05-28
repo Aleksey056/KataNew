@@ -17,7 +17,7 @@ text-color--red - это ссылки и Модификатор сам по се
 
 
  
-	
+
 Что стоит поправить:
 
 feedback и callback - это же один и тот же Блок (например modal)
@@ -26,7 +26,6 @@ form__button-send и icon-price - один и тот же Блок
 
 icon-button - можно сделать через Блок round-icon
 
-Чем отличаются Элементы form__name, form__number, form__email? .feedback .form input, .feedback .form textarea - если у них общие стили, то видимо можно сделать какой-то общий Элемент (например form__field)
 
 
 

@@ -50,6 +50,24 @@
 		}
 	}
 
+	.long-button {
+	height: 32px;
+	border-radius: 16px;
+		&--send {
+			margin-left: auto;
+			margin-right: 16px;
+			width: 136px;
+			background-image: url(../img/feedback/Group.svg);
+		}
+		&--order {
+			width: 119px;
+			background-image: url(../img/price/price-button.svg);
+		}
+		&:hover {
+			opacity: 50%;
+		}
+}
+
 
 
 body {
@@ -145,3 +163,5 @@ body {
 			}
     }
   }
+
+
