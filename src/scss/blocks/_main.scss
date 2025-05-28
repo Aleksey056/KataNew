@@ -91,9 +91,11 @@ main {
 
 	.nav {
 		margin-bottom: 24px;
-		margin-left: 16px;
-			@media (min-width: $tablet) {
-				margin-left: 24px;
+			// @media (min-width: $tablet) {
+			// 	margin-left: 24px;
+			// }
+			@media (min-width: $widescreen) {
+				margin-bottom: 10px;
 			}
 		.swiper__shadow {
 			height: 40px;
@@ -101,7 +103,6 @@ main {
 	}
 	
 	.menu {
-		height: 40px;
 		padding: 0;
 		white-space: nowrap;
 		display: flex;
@@ -112,7 +113,12 @@ main {
 			@media (min-width: $tablet) {
 				max-height: 40px;
 			}
+			@media (min-width: $widescreen) {
+				max-height: 100%;
+				flex-wrap: wrap;
+			}
 		&__link {
+			margin-left: 16px;
 			display: flex;
 			align-items: center;
 			box-sizing: border-box;
@@ -126,6 +132,13 @@ main {
 			letter-spacing: -0.2px;
 			color: #7E7E82;
 			text-decoration: none;
+			@media (min-width: $tablet) {
+				margin-left: 24px;
+			}
+				&:hover {
+					border: 2px solid #B8FFEC;
+					background-color: $colorWhite;
+				}
 		}
 	}
 
@@ -134,11 +147,6 @@ main {
 			@media (min-width: $widescreen) {
 				display: flex;
 			}
-	}
-
-	.menu__link:hover {
-		border: 2px solid #B8FFEC;
-		background-color: $colorWhite;
 	}
 
 	.section-info {
