@@ -22,29 +22,29 @@
 		</div>
 		<nav class="nav">	
 			<ul class="menu">
-				<li class="menu-block menu-block--hover">
-					<a class="menu-block__text menu-block__text--hover" href="#">Ремонт техники</a>
+				<li class="menu-block">
+					<a class="menu-block__text" href="#">Ремонт техники</a>
 				</li>
-				<li class="menu-block menu-block--hover">
-					<a class="menu-block__text menu-block__text--hover" href="#">Услуги и сервисы</a>
+				<li class="menu-block">
+					<a class="menu-block__text" href="#">Услуги и сервисы</a>
 				</li>
-				<li class="menu-block menu-block--hover">
-					<a class="menu-block__text menu-block__text--hover" href="#">Корпоративным клиентам</a>
+				<li class="menu-block">
+					<a class="menu-block__text" href="#">Корпоративным клиентам</a>
 				</li>
-				<li class="menu-block menu-block--hover">
-					<a class="menu-block__text menu-block__text--hover" href="#">Продавцам техники</a>
+				<li class="menu-block">
+					<a class="menu-block__text" href="#">Продавцам техники</a>
 				</li>
-				<li class="menu-block menu-block--hover">
-					<a class="menu-block__text menu-block__text--hover" href="#">Партнерам</a>
+				<li class="menu-block">
+					<a class="menu-block__text" href="#">Партнерам</a>
 				</li>
-				<li class="menu-block menu-block--hover">
-					<a class="menu-block__text menu-block__text--hover" href="#">Производителям</a>
+				<li class="menu-block">
+					<a class="menu-block__text" href="#">Производителям</a>
 				</li>
-				<li class="menu-block menu-block--hover">
-					<a class="menu-block__text menu-block__text--hover" href="#">Наши сервисные центры</a>
+				<li class="menu-block">
+					<a class="menu-block__text" href="#">Наши сервисные центры</a>
 				</li>
-				<li class="menu-block menu-block--hover">
-					<a class="menu-block__text menu-block__text--hover" href="#">Контакты</a>
+				<li class="menu-block">
+					<a class="menu-block__text" href="#">Контакты</a>
 				</li>
 			</ul> 
 		</nav>
@@ -59,44 +59,38 @@
 				<span>mail@cps.com</span>
 				<span class="contact-info__number">8 800 890 8900</span>
 			</div>
-			<div class="contact-info__lang">
-				<button class="contact-info__lang">RU</button>
-				<button class="contact-info__lang">EN</button>
-				<button class="contact-info__lang">CH</button>
+			<div class="lang">
+				<button>RU</button>
+				<button>EN</button>
+				<button>CH</button>
 			</div>
 		</div>
 	</div>
-	<div class="feedback" id="feedback">
+	<div class="modal feedback" id="feedback">
 		<div class="drops-menu-green-line"></div>
-		<button class="round-icon round-icon--feedback" id="buttonFeedbackHidden"></button>
-		<div class="feedback-title">
-			<div class="feedback-title__img"></div>
-			<h1 class="feedback-title__text">Обратная связь</h1>
-		</div>
+		<button class="round-icon round-icon--modal" id="buttonFeedbackHidden"></button>
+		<h3 class="modal-title"><span class="modal-title__img"></span>Обратная связь</h3>
 		<form class="form">
 			<input type="text" class="form__name" placeholder="Имя">
 			<input type="text" class="form__number" placeholder="Телефон">
 			<input type="text" class="form__email" placeholder="Электронная почта">
-			<textarea name="#" id="#" class="form__text" placeholder="Сообщение"></textarea>
-			<p>Нажимая “отправить”, вы даете согласие на <span class="text-color--red">обработку 
-				персональных данных</span> и соглашаетесь 
-				с нашей <span class="text-color--red">политикой конфиденциальности</span></p>
-			<button class="form__button-send"></button>
+			<textarea name="#" id="#" class="form__textarea" placeholder="Сообщение"></textarea>
+			<p class="form__text">Нажимая “отправить”, вы даете согласие на <a class="form__text--color-red" href="#">обработку 
+				персональных данных</a> и соглашаетесь 
+				с нашей <a class="form__text--color-red" href="#">политикой конфиденциальности</a></p>
+			<button class="long-button long-button--send"></button>
 		</form>
 	</div>
-	<div class="callback" id="callback">
+	<div class="modal callback" id="callback">
 		<div class="drops-menu-green-line"></div>	
-		<button class="round-icon round-icon--callback" id="buttonCallbackHidden"></button>
-		<div class="callback-title">
-			<div class="callback-title__img"></div>
-			<h1 class="callback-title__text">Заказать звонок</h1>
-		</div>
+		<button class="round-icon round-icon--modal" id="buttonCallbackHidden"></button>
+		<h3 class="modal-title"><span class="modal-title__img"></span>Заказать звонок</h3>
 		<form class="form">
 			<input type="text" class="form__number" placeholder="Телефон">
-			<p>Нажимая “отправить”, вы даете согласие на <span class="text-color--red">обработку 
-				персональных данных</span> и соглашаетесь 
-				с нашей <span class="text-color--red">политикой конфиденциальности</span></p>
-			<button class="form__button-send"></button>
+			<p class="form__text">Нажимая “отправить”, вы даете согласие на <a class="form__text--color-red" href="#">обработку 
+				персональных данных</a> и соглашаетесь 
+				с нашей <a class="form__text--color-red" href="#">политикой конфиденциальности</a></p>
+			<button class="long-button long-button--send"></button>
 		</form>
 	</div>
 </div>
@@ -141,7 +135,9 @@
 			</div>	
 		</section>
 		<nav class="nav">	
+			
 			<ul class="menu">
+				
 				<li><a class="menu__link menu__link--hover" href="#">Ремонтируемые устройства</a></li>
 				<li><a class="menu__link" href="#">Дополнительные услуги</a></li>
 				<li><a class="menu__link" href="#">Цены на услуги</a></li>
@@ -170,10 +166,7 @@
 
 	<section class="swiper-conteiner">
 
-		<div class="swiper-conteiner__title-section"> 
-			<div class="green-line"></div> 
-			<h2>Ремонт техники различных брендов</h2>
-		</div>
+		<h2 class="swiper-conteiner__title-section">Ремонт техники различных брендов</h2>
 
 		<div class="brands">
 			<div class="swiper slider">
@@ -188,10 +181,7 @@
 			</div>
 		</div>
 
-		<div class="swiper-conteiner__title-section"> 
-			<div class="green-line"></div> 
-			<h2>Ремонт различных видов техники</h2>
-		</div>
+			<h2 class="swiper-conteiner__title-section">Ремонт различных видов техники</h2>
 
 		<div class="technic">
 			<div class="swiper slider">
@@ -206,10 +196,7 @@
 			</div>
 		</div>
 
-		<div class="swiper-conteiner__title-section"> 
-			<div class="green-line"></div> 
-			<h2>цены на услуги</h2>
-		</div>
+			<h2 class="swiper-conteiner__title-section">Цены на услуги</h2>
 
 		<div class="title-span">
 			<span class="title-span__span1">Ремонтные услуги</span>
