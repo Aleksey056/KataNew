@@ -13,19 +13,6 @@
       width: 440px;
     }
 
-
-	.round-icon--modal {
-		background-image: url(../img/mobile_menu/burger.svg);
-		margin-top: 24px;
-		margin-left: 16px;
-			@media (min-width: $widescreen) {
-				position: absolute;
-				margin-top: 0;
-				top: 32px;
-				left: -88px;
-			}
-		}
-
 		.modal-title {
     margin-top: 32px;
 		display: flex;
@@ -45,29 +32,19 @@
 		}
 	}
 
-
-
-
 }
 
-	.modal--active {
-	display: block;
-  z-index: 300;
-  transform: translateX(0);
-	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
-		// @media (min-width: 1440px) {
-		// 	right: auto;
-		// 	transform: translateX(1000px);
-		// 	// чтоб не было по центру страницы закоментировать этот media
-		// }
-}
-
-
-
-
-
-
-
+	.round-icon--modal {
+		background-image: url(../img/mobile_menu/burger.svg);
+		margin-top: 24px;
+		margin-left: 16px;
+			@media (min-width: $widescreen) {
+				position: absolute;
+				margin-top: 0;
+				top: 32px;
+				left: -88px;
+			}
+		}
 
 .feedback--active, .modal--active {
 	display: block;
@@ -80,10 +57,6 @@
 		// 	// чтоб не было по центру страницы закоментировать этот media
 		// }
 }
-
-
-
-
 
 .form {
     padding-top: 24px;
@@ -143,3 +116,15 @@
 			}
     }
   }
+
+	.modal--active {
+	display: block;
+  z-index: 300;
+  transform: translateX(0);
+	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+		// @media (min-width: 1440px) {
+		// 	right: auto;
+		// 	transform: translateX(1000px);
+		// 	// чтоб не было по центру страницы закоментировать этот media
+		// }
+}
