@@ -13,17 +13,17 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
 @font-face {
   font-family: TT-Lakes;
   font-weight: 500;
-  src: url("/src/fonts/TTLakes/TTLakes-Medium.woff"); }
+  src: url(./fonts/TTLakes-Medium.woff); }
 
 @font-face {
   font-family: TT-Lakes;
   font-weight: 700;
-  src: url("/src/fonts/TTLakes/TTLakes-Bold.woff"); }
+  src: url(./fonts/TTLakes-Bold.woff); }
 
 @font-face {
   font-family: TT-Lakes;
   font-weight: 400;
-  src: url("/src/fonts/TTLakes/TTLakes-Regular.woff"); }
+  src: url(./fonts/TTLakes-Regular.woff); }
 
 .header {
   background-color: #FFFFFF; }
